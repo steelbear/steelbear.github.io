@@ -144,20 +144,54 @@
 	z-index: 1;
 }
 
+.hero h4 {
+	color: var(--on-primary);
+	letter-spacing: 2px;
+	font-size: 40px;
+
+	opacity: 0;
+	transform: translateY(20px);
+
+	animation-name: fade-up;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
 .hero h1 {
 	color: var(--primary-90);
 	font-size: 90px;
+
+	opacity: 0;
+	transform: translateY(20px);
+
+	animation-name: fade-up;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: .5s;
 }
 
 .hero h3 {
 	color: var(--on-primary);
 	font-size: 30px;
+
+	opacity: 0;
+	transform: translateY(20px);
+
+	animation-name: fade-up;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
 }
 
-.hero h4 {
-	color: var(--on-primary);
-	letter-spacing: 2px;
-	font-size: 40px;
+@keyframes fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 /* 네비게이션 */
